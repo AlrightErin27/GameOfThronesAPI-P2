@@ -2,13 +2,13 @@
 
 ## Current name ideas: "Westeros' Public Library", "Vary's Little Birds" or "The Citadel's Library"
 
-### An API of Ice And Fire: https://anapioficeandfire.com/
+### An API of Ice & Fire: https://anapioficeandfire.com/
 
-⚔️⚔️ 👑 ⚔️⚔️
+# ⚔️ ⚔️ 👑 ⚔️ ⚔️
 
 # Overview:
 
-Overall, this website should read as an interactive and social media platform. Users can personalize their info, see other's profiles, as well as enjoy access to Game of Thrones data, quizzes and perhaps even be able to build their own character. My styling, if stretch is reached, will be a fun clash of medieval and high fantasy contrasting against the cartoonish bright colors of websites like Buzzfeed.
+This website should read as an interactive & social media platform. Users can personalize their info, enjoy access to Game of Thrones data, quizzes & perhaps even be able to build their own character. My styling, if stretch is reached, will be a fun clash of medieval & high fantasy contrasting against the cartoonish bright colors of websites like Buzzfeed.
 
 # MVP:
 
@@ -16,19 +16,15 @@ Overall, this website should read as an interactive and social media platform. U
 
 ⚔️ Save user's content: username, hashed password, email & additional info from site use.
 
-⚔️ Make characters searchable, display info about them, and let users same them to their profile page.
+⚔️ Make characters searchable, display info about them.
 
-⚔️ Let users post on their user page.
-
-⚔️ Create a very simple buzzfeed style quiz, that will be a few questions long, have multiple choice answers that will determine 1 of 3 endpoints.
+⚔️ Create a very simple buzzfeed style quiz, that will be a few questions long, have multiple choice answers & will end with a loss or win.
 
 # Stretch Goals:
 
 ⚔️ Let other users comment on other users' posts.
 
-⚔️ Create a few quizzes.
-
-⚔️ Let users create quizzes.
+⚔️ Create a few quizzes. Not all true or false.
 
 ⚔️ Let users create their own characters that are saved to their profile & the database.
 
@@ -36,11 +32,11 @@ Overall, this website should read as an interactive and social media platform. U
 
 # Schematic/ERD:
 
-![schema](/images/schema1.png)
+![schema](/images/schema2.png)
 
 # Wireframe:
 
-![logOnPage](/images/loginPage.png)
+![loginPage](/images/loginPage.png)
 
 ![homePage](/images/homePage.png)
 
@@ -48,22 +44,28 @@ Overall, this website should read as an interactive and social media platform. U
 
 ![quizPage](/images/quizPage.png)
 
-![createCharacterPage](/images/createCharPage.png)
-
 # User Story:
 
-1. Login Page: this is the first page the user will see. It will simply have 2 options...
-   A. Log in to an existing account.
-   B. Create an account.
-2. Home Page: this page is your home base. It has all of your info., saved characters & comments.
-3. At the top of all pages, after being logged on, there will be a navigation bar that offers: Home, Logout, Quizzes, Search & Create a Character
-4. Quiz Page: It will feature a quiz that's answer appears on the same page.
-5. Search Page: Allows you to search the API database by specific values. Shows results on the same page. Allows you to favorite on this page. Once favorite has been selected it send you back to the home page so you can see that it's been added.
-6. Create a Character Page: Allows you create a new row in the character's database. Once entered you are returned to your homepage where the data will be displayed.
-7. If logout has been selected from any page, it will take you to the original blank log in page.
+1. The first page you see, as a user, is the login page.
+2. At this page you choose to either...
+
+   A. create a user account, enter in a username, email & password.
+
+   B. login to an already existing account.
+
+3. The next page the logged in user will see is their home page.
+4. The user from their home page can add some text to their "about me" area.
+5. Once logged in, the user will always have the navigation bar at the top of the page.
+6. The user can use the navigation bar to do 3 things from their home page.
+
+   A. Log out-- this brings you back to an empty login page.
+
+   B. Database-- the user can search the API.
+
+   C. Quizzes-- users can take quizzes and see the result at the bottom of the quiz page.
 
 # Sources Used:
 
-⚔️ An API of Ice And Fire: https://anapioficeandfire.com/
-
-⚔️ Buzzfeed: https://www.buzzfeed.com/quizzes
+⚔️ An API of Ice And Fire: https://anapioficeandfire.com/ <br>
+⚔️ Buzzfeed: https://www.buzzfeed.com/quizzes <br>
+⚔️ DB designer: https://app.dbdesigner.net/designer <br>

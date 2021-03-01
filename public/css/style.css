@@ -1,12 +1,13 @@
 body {
-  margin: 0;
+  margin: 30;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
-  background-color: rebeccapurple;
+  background-color: rgb(24, 94, 27);
   padding: 10px;
+  font-family: "Tangerine", cursive;
 }
 
 nav a {
@@ -16,5 +17,7 @@ nav a {
 }
 
 nav a:hover {
-  color: coral;
+  color: rgb(71, 167, 79);
 }
+/* FONT NAMES:font-family: 'Fascinate', cursive; font-family: 'Grenze
+    Gotisch', cursive; font-family: 'Tangerine', cursive; */

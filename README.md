@@ -37,3 +37,13 @@ Overall, this website should read as an interactive and social media platform. U
 ![schema](/images/schema1.png)
 
 # Wireframe:
+
+![logOnPage](/images/loginPage.png)
+
+![homePage](/images/homePage.png)
+
+![searchPage](/images/searchPage.png)
+
+![quizPage](/images/quizPage.png)
+
+![createCharacterPage](/images/createCharPage.png)

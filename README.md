@@ -58,7 +58,7 @@ Overall, this website should read as an interactive and social media platform. U
 2. Home Page: this page is your home base. It has all of your info., saved characters & comments.
 3. At the top of all pages, after being logged on, there will be a navigation bar that offers: Home, Logout, Quizzes, Search & Create a Character
 4. Quiz Page: It will feature a quiz that's answer appears on the same page.
-5. Search Page: Allows you to search the API database by specific values. Shows results on the same page. Allows you to favorite on this page. Once favorite has been selected it send you back to the home page so you can see that its been added.
+5. Search Page: Allows you to search the API database by specific values. Shows results on the same page. Allows you to favorite on this page. Once favorite has been selected it send you back to the home page so you can see that it's been added.
 6. Create a Character Page: Allows you create a new row in the character's database. Once entered you are returned to your homepage where the data will be displayed.
 7. If logout has been selected from any page, it will take you to the original blank log in page.
 

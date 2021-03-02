@@ -1,25 +1,30 @@
 body {
   margin: 30;
   background-color: beige;
+  font-family: "Grenze Gotisch", cursive;
 }
 
 nav {
-  display: flex;
-  justify-content: space-between;
-  background-color: rgb(24, 94, 27);
+  background-color: rgb(189, 227, 191);
   padding: 10px;
-  font-family: "Tangerine", cursive;
-  font-size: 50px;
+  font-family: "Grenze Gotisch", cursive;
+  font-size: 30px;
+  text-align: center;
+  margin: auto;
 }
 
 nav a {
   color: white;
   text-decoration: none;
-  padding: 5px;
+  padding: 100px;
 }
 
 nav a:hover {
   color: rgb(71, 167, 79);
 }
+/* 
+.auth {
+  border: solid 4px red;
+} */
 /* FONT NAMES:font-family: 'Fascinate', cursive; font-family: 'Grenze
     Gotisch', cursive; font-family: 'Tangerine', cursive; */

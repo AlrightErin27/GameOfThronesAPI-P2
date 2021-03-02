@@ -21,25 +21,24 @@ app.use(express.urlencoded({ extended: false }));
 app.use(require("cookie-parser")());
 
 //Routes //
-app.get("/", (req, res) => {
-  res.send("🌞 Hello World!🌞 ");
-});
-
-/* Routes */
+//Test GET Route//
+// app.get("/", (req, res) => {
+//   res.send("🌞 Hello World!🌞 ");
+// });
 
 //GET API INFO//
-// app.get("/", async (req, res) => {
-//   try {
-//     const GotUrl = "https://www.anapioficeandfire.com/api/characters/823";
-//     const response = await axios.get(GotUrl);
-//     const characters = response.data.results;
+app.get("/", async (req, res) => {
+  try {
+    const GotUrl = "https://www.anapioficeandfire.com/api/characters/823";
+    const response = await axios.get(GotUrl);
+    const characters = response.data.results;
 
-//     res.render("index", { characters: characters });
-//   } catch (err) {
-//     console.log("🍎 🍎 🍎", err);
-//     res.render("index", { characters: [] });
-//   }
-// });
+    res.render("index", { characters: characters });
+  } catch (err) {
+    console.log("🍎 🍎 🍎", err);
+    res.render("index", { characters: [] });
+  }
+});
 
 app.listen(PORT, () => {
   console.log(`Server is listening to port🚢 : ${PORT}`);

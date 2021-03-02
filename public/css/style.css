@@ -11,6 +11,7 @@ nav {
   font-size: 30px;
   text-align: center;
   margin: auto;
+  width: 100vw;
 }
 
 nav a {
@@ -22,9 +23,6 @@ nav a {
 nav a:hover {
   color: rgb(71, 167, 79);
 }
-/* 
-.auth {
-  border: solid 4px red;
-} */
+
 /* FONT NAMES:font-family: 'Fascinate', cursive; font-family: 'Grenze
     Gotisch', cursive; font-family: 'Tangerine', cursive; */

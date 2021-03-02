@@ -21,15 +21,11 @@ app.use(express.urlencoded({ extended: false }));
 app.use(require("cookie-parser")());
 
 //Controllers//
-// app.use("/auth", require("./controllers/authController"));
+app.use("/userhome", require("./controllers/userhomeController"));
 
 //Routes //
-//Test GET Route//
-// app.get("/", (req, res) => {
-//   res.send("🌞 Hello World!🌞 ");
-// });
 
-//GET API INFO//
+//GET API INFO//  //in ejs file make squids for 'characters'
 // app.get("/", async (req, res) => {
 //   try {
 //     const GotUrl = "https://www.anapioficeandfire.com/api/characters/823";
@@ -40,27 +36,42 @@ app.use(require("cookie-parser")());
 //     res.render("index", { characters: characters });
 //   } catch (err) {
 //     console.log("🍎 🍎 🍎", err);
-//     res.render("index", { characters: [] });
 //   }
 // });
 
-//create route to add new user to the user's table//POST//
-//user.username - form's username
+//Route: render index.ejs//
 app.get("/", async (req, res) => {
   res.render("index");
 });
 
+//Route: userhome GET//
+app.get("/userhome", async (req, res) => {});
+
+// Route: Create new user OR login -in user's table//
 app.post("/", async (req, res) => {
   try {
-    const user = await db.user.create({
-      username: req.body.username,
-      password: req.body.password,
+    const [user, created] = await db.user.findOrCreate({
+      where: { username: req.body.username, password: req.body.password },
     });
+    if (created) {
+      console.log(
+        `🥪 🥪 🥪 Welcome ${req.body.username}! You've created a new account.`
+      );
+      res.render("userhome", { user: req.body.username });
+    } else if (user) {
+      res.render("userhome", { user: req.body.username });
+    } else {
+      console.log(`😢 😢 😢 Incorrect username or password.`);
+      res.redirect("/");
+    }
+    // console.log("🍌  🍌  🍌 ", created);
+    // res.render("userhome", { user: req.body.username });
   } catch (err) {
     console.log("🚒  🚒  🚒 ", err);
   }
 });
 
+//PORT//
 app.listen(PORT, () => {
-  console.log(`Server is listening to port🚢 : ${PORT}`);
+  console.log(`Server listening to 🚢 PORT${PORT}`);
 });

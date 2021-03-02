@@ -68,4 +68,8 @@ This website should read as an interactive & social media platform. Users can pe
 
 ⚔️ An API of Ice And Fire: https://anapioficeandfire.com/ <br>
 ⚔️ Buzzfeed: https://www.buzzfeed.com/quizzes <br>
-⚔️ DB designer: https://app.dbdesigner.net/designer <br>
+⚔️ DB Schema designer: https://app.dbdesigner.net/designer <br>
+
+# Notes:
+
+👑 In order to meet requirements for this assignment, I may shift focus & change my MVP & stretch. Getting the user's & letting them search the api will be the first things I do. From there it is likely that I let users save their favorite characters to their profile & build a quiz.👑

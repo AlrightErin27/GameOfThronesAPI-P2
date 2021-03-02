@@ -14,7 +14,7 @@ This website should read as an interactive & social media platform. Users can pe
 
 ⚔️ Let user's create a profile, & login/logout.
 
-⚔️ Save user's content: username, hashed password, email & additional info from site use.
+⚔️ Save user's content: username, hashed password & additional info from site use.
 
 ⚔️ Make characters searchable, display info about them.
 
@@ -49,7 +49,7 @@ This website should read as an interactive & social media platform. Users can pe
 1. The first page you see, as a user, is the login page.
 2. At this page you choose to either...
 
-   A. create a user account, enter in a username, email & password.
+   A. create a user account, enter in a username & password.
 
    B. login to an already existing account.
 

@@ -1,6 +1,12 @@
 # GameOfThronesAPI-P2
 
-## Current name ideas: "Westeros' Public Library", "Vary's Little Birds" or "The Citadel's Library"
+# Casterly Rock Official Municipal Website
+
+![lannistersheild](/images/sheild.png)
+
+## Casterly Rock, The Only True Capital
+
+### "Fools look at the Westerlands & see gold. Fools see our wealth & call it strength. Gold is just another rock. The Westerlands are strong because of House Lannister. From strong leadership comes unity; from unity comes power." ―Tywin Lannister
 
 ### An API of Ice & Fire: https://anapioficeandfire.com/
 
@@ -8,7 +14,7 @@
 
 # Overview:
 
-This website should read as an interactive & social media platform. Users can personalize their info, enjoy access to Game of Thrones data, quizzes & perhaps even be able to build their own character. My styling, if stretch is reached, will be a fun clash of medieval & high fantasy contrasting against the cartoonish bright colors of websites like Buzzfeed.
+This website should read as an public website for Casterly Rock, run by the Lannister family. Users can personalize their info, enjoy access to Game of Thrones data, quizzes & perhaps even be able to build their own character. My styling, if stretch is reached, will be a municipal website blatantly run by House Lannister. Lots of propaganda, ads & the shabby look of real bureaucratic city websites.
 
 # MVP:
 
@@ -18,7 +24,7 @@ This website should read as an interactive & social media platform. Users can pe
 
 ⚔️ Make characters searchable, display info about them.
 
-⚔️ Create a very simple buzzfeed style quiz, that will be a few questions long, have multiple choice answers & will end with a loss or win.
+⚔️ Create a very simple quiz, that will be a few questions long, have multiple choice answers & will end with a loss or win.
 
 # Stretch Goals:
 
@@ -28,7 +34,7 @@ This website should read as an interactive & social media platform. Users can pe
 
 ⚔️ Let users create their own characters that are saved to their profile & the database.
 
-⚔️ Extra CSS styling to make the website look more like Buzzfeed.
+⚔️ Extra CSS styling to make the website look more like a city's public website.
 
 # Sprints:
 
@@ -73,7 +79,6 @@ This website should read as an interactive & social media platform. Users can pe
 # Sources Used:
 
 ⚔️ An API of Ice And Fire: https://anapioficeandfire.com/ <br>
-⚔️ Buzzfeed: https://www.buzzfeed.com/quizzes <br>
 ⚔️ DB Schema designer: https://app.dbdesigner.net/designer <br>
 
 # Notes:

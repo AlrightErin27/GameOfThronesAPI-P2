@@ -41,7 +41,7 @@ app.use("/userhome", require("./controllers/userhomeController"));
 
 //Route: render index.ejs//
 app.get("/", async (req, res) => {
-  res.render("index");
+  res.render("index", { alert: null});
 });
 
 //Route: userhome GET//
@@ -50,22 +50,25 @@ app.get("/userhome", async (req, res) => {});
 // Route: Create new user OR login -in user's table//
 app.post("/", async (req, res) => {
   try {
+    //Make sure they have entered text into the inputs
+    if (req.body.username === "" || req.body.password === "") {
+      console.log("no go 😢");
+      return res.redirect("/");
+    }
+    //find or create users
     const [user, created] = await db.user.findOrCreate({
       where: { username: req.body.username, password: req.body.password },
     });
     if (created) {
-      console.log(
-        `🥪 🥪 🥪 Welcome ${req.body.username}! You've created a new account.`
-      );
-      res.render("userhome", { user: req.body.username });
-    } else if (user) {
-      res.render("userhome", { user: req.body.username });
-    } else {
-      console.log(`😢 😢 😢 Incorrect username or password.`);
-      res.redirect("/");
+      res.render("userhome", {
+        user: `❇ Welcome ${req.body.username}. You've created a new account.❇ `,
+      });
+    } else if (!created) {
+      console.log(`🐟 🐟 🐟  Welcome back ${req.body.username}! `);
+      res.render("userhome", {
+        user: `😍  Welcome back ${req.body.username}!😍  `,
+      });
     }
-    // console.log("🍌  🍌  🍌 ", created);
-    // res.render("userhome", { user: req.body.username });
   } catch (err) {
     console.log("🚒  🚒  🚒 ", err);
   }
@@ -74,4 +77,5 @@ app.post("/", async (req, res) => {
 //PORT//
 app.listen(PORT, () => {
   console.log(`Server listening to 🚢 PORT${PORT}`);
+  rowdyResults.print();
 });

@@ -2,6 +2,8 @@ body {
   margin: 30;
   background-color: beige;
   font-family: "Grenze Gotisch", cursive;
+  font-size: 40px;
+  color:rgb(24, 60, 27);
 }
 
 nav {

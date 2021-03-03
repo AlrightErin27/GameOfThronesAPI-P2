@@ -30,6 +30,12 @@ This website should read as an interactive & social media platform. Users can pe
 
 ⚔️ Extra CSS styling to make the website look more like Buzzfeed.
 
+# Sprints:
+
+🐉 03/03/21: Logon, create account & logout all working. Cookies are working. Today I plan to make the API searchable, add table associations, let the user select favorites & hash the passwords.
+
+🐉 03/03/21: Make favorite characters viewable on user's home page. Make sure code is dry. Hit MVP. Decide what stretch goal I will begin working towards.
+
 # Schematic/ERD:
 
 ![schema](/images/schema2.png)
@@ -73,3 +79,4 @@ This website should read as an interactive & social media platform. Users can pe
 # Notes:
 
 👑 In order to meet requirements for this assignment, I may shift focus & change my MVP & stretch. Getting the user's & letting them search the api will be the first things I do. From there it is likely that I let users save their favorite characters to their profile & build a quiz.👑
+👑 Currently, to hit MVP I need to make the API search able, give tables associations, and build saved favorites to user's page. May change theme. Instead of Buzzfeed, basing the styling & story on bureaucratic website's for states or cities. Maybe make fake campaign ads, public services, library card renewal at Citadel library...etc 👑

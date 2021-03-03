@@ -41,7 +41,7 @@ app.use("/userhome", require("./controllers/userhomeController"));
 
 //Route: render index.ejs//
 app.get("/", async (req, res) => {
-  res.render("index", { alert: null});
+  res.render("index", { alert: null });
 });
 
 //Route: userhome GET//
@@ -76,12 +76,16 @@ app.post("/", async (req, res) => {
   }
 });
 
+app.get("/logout", (req, res) => {
+  res.clearCookie("userId");
+  res.redirect("/");
+});
+
 //PORT//
 app.listen(PORT, () => {
   console.log(`Server listening to 🚢 PORT${PORT}`);
   rowdyResults.print();
 });
-
 
 //////////////////////////////
 // const { Router } = require("express");

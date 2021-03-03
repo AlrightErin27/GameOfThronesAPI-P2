@@ -80,11 +80,13 @@ app.get("/userhome", async (req, res) => {
     user: `${currentUser.dataValues.username} is logged on.`,
   });
 });
+
+///~~~~~~~~~~///Routes to Other Browser Pages///~~~~~~~~~~///
 //Route: quiz GET//
 app.get("/quiz", async (req, res) => {
   const userId = req.cookies.userId;
   if (!userId) {
-    console.log("no go 😢");
+    console.log("no go 😢. No cookies!");
     return res.redirect("/");
   }
   res.render("./quiz/quiz");
@@ -93,16 +95,19 @@ app.get("/quiz", async (req, res) => {
 app.get("/search", async (req, res) => {
   const userId = req.cookies.userId;
   if (!userId) {
-    console.log("no go 😢");
+    console.log("no go 😢. No cookies!");
     return res.redirect("/");
   }
   res.render("./search/search");
 });
-//Log out & remove cookies
+
+///~~~~~~~~~~///Logout///~~~~~~~~~~///
+//& remove cookies
 app.get("/logout", async (req, res) => {
   res.clearCookie("userId");
   res.redirect("/");
 });
+
 //PORT//
 app.listen(PORT, () => {
   console.log(`Server listening to 🚢 PORT${PORT}`);

@@ -1,10 +1,6 @@
-# GameOfThronesAPI-P2
-
 # Casterly Rock Official Municipal Website
 
-![lannistersheild](/images/sheild.png)
-
-## Casterly Rock, The Only True Capital
+## ![lannistersheild](/images/sheild.png) The Only True Throne of Westeros ![lannistersheild](/images/sheild.png)
 
 ### "Fools look at the Westerlands & see gold. Fools see our wealth & call it strength. Gold is just another rock. The Westerlands are strong because of House Lannister. From strong leadership comes unity; from unity comes power." ―Tywin Lannister
 
@@ -79,6 +75,7 @@ This website should read as an public website for Casterly Rock, run by the Lann
 # Sources Used:
 
 ⚔️ An API of Ice And Fire: https://anapioficeandfire.com/ <br>
+⚔️ Game of Thrones Fandom Wiki: https://gameofthrones.fandom.com <br>
 ⚔️ DB Schema designer: https://app.dbdesigner.net/designer <br>
 
 # Notes:

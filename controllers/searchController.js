@@ -3,11 +3,13 @@ const { default: axios } = require("axios");
 const { render } = require("ejs");
 const db = require("../models");
 
-// //Read Search (by Name) Input//
+//Read what was searched by name
 router.post("/", async (req, res) => {
   const searchedName = req.body.searched_name;
   try {
-    console.log("👾 👾 👾", searchedName);
+    const GotUrl = "https://www.anapioficeandfire.com/api/characters/823";
+    const response = await axios.get(GotUrl);
+    console.log("👾 👾 👾", searchedName, response.data.name);
   } catch (err) {
     console.log("🍎 🍎 🍎", err);
   }
@@ -18,9 +20,12 @@ router.post("/", async (req, res) => {
 //   try {
 //     const GotUrl = "https://www.anapioficeandfire.com/api/characters/823";
 //     const response = await axios.get(GotUrl);
+//     console.log(response.data);
+//     const characters = response.data.name;
 //     console.log("👾 👾 👾 ", response.data);
 //     const searchResults = response.data.name;
 
+//     res.render("index", { characters: characters });
 //     res.render("/search", { searchResults: searchResults });
 //   } catch (err) {
 //     console.log("🍎 🍎 🍎", err);

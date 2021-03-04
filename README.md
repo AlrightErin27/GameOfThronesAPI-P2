@@ -80,5 +80,5 @@ This website should read as an public website for Casterly Rock, run by the Lann
 
 # Notes:
 
-👑 In order to meet requirements for this assignment, I may shift focus & change my MVP & stretch. Getting the user's & letting them search the api will be the first things I do. From there it is likely that I let users save their favorite characters to their profile & build a quiz.👑
+👑 In order to meet requirements for this assignment, I may shift focus & change my MVP & stretch. Getting the user's & letting them search the api will be the first things I do. From there it is likely that I let users save their favorite characters to their profile & build a quiz.👑<br>
 👑 Currently, to hit MVP I need to make the API search able, give tables associations, and build saved favorites to user's page. May change theme. Instead of Buzzfeed, basing the styling & story on bureaucratic website's for states or cities. Maybe make fake campaign ads, public services, library card renewal at Citadel library...etc 👑

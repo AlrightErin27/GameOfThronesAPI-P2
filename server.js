@@ -86,7 +86,7 @@ app.get("/userhome", async (req, res) => {
 app.get("/quiz", async (req, res) => {
   const userId = req.cookies.userId;
   if (!userId) {
-    console.log("no go 😢. No cookies!");
+    console.log("no go 😢. No cookies! 🍪 ");
     return res.redirect("/");
   }
   res.render("./quiz/quiz");
@@ -95,7 +95,7 @@ app.get("/quiz", async (req, res) => {
 app.get("/search", async (req, res) => {
   const userId = req.cookies.userId;
   if (!userId) {
-    console.log("no go 😢. No cookies!");
+    console.log("no go 😢. No cookies 🍪 !");
     return res.redirect("/");
   }
   res.render("./search/search");

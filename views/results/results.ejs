@@ -1,6 +1,7 @@
-<h1>Search By Name Results</h1>
+<h1>Results:</h1>
 
-<% if(characters) { %>
-<%= characters[0].name %>
-<% } %>
-
+    <% characters.forEach(character=> { %>
+        <div>
+                <a href="https://www.anapioficeandfire.com/api/characters?name=<%= character.name %>"><%= character.name %></a>
+        </div>
+    <% }) %>

@@ -24,6 +24,7 @@ app.use(require("cookie-parser")());
 app.use("/userhome", require("./controllers/userhomeController"));
 app.use("/quiz", require("./controllers/quizController"));
 app.use("/search", require("./controllers/searchController"));
+app.use("/results", require("./controllers/resultsController"));
 
 //Routes //
 //Route: render index.ejs//
@@ -81,7 +82,7 @@ app.get("/userhome", async (req, res) => {
   });
 });
 
-///~~~~~~~~~~///Routes to Other Browser Pages///~~~~~~~~~~///
+///~~~~~~~~~~///Routes to Other Browser Pages & Make Sure They've Cookies///~~~~~~~~~~///
 //Route: quiz GET//
 app.get("/quiz", async (req, res) => {
   const userId = req.cookies.userId;
@@ -100,7 +101,15 @@ app.get("/search", async (req, res) => {
   }
   res.render("./search/search");
 });
-
+//Route: search GET//
+app.get("/results", async (req, res) => {
+  const userId = req.cookies.userId;
+  if (!userId) {
+    console.log("no go 😢. No cookies 🍪 !");
+    return res.redirect("/");
+  }
+  res.render("./results/results");
+});
 ///~~~~~~~~~~///Logout///~~~~~~~~~~///
 //& remove cookies
 app.get("/logout", async (req, res) => {

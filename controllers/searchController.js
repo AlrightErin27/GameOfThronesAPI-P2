@@ -7,9 +7,10 @@ const db = require("../models");
 router.post("/", async (req, res) => {
   const searchedName = req.body.searched_name;
   try {
-    const GotUrl = "https://www.anapioficeandfire.com/api/characters/823";
+    const GotUrl = `https://www.anapioficeandfire.com/api/characters?name=${searchedName}`;
     const response = await axios.get(GotUrl);
-    console.log("👾 👾 👾", searchedName, response.data.name);
+    console.log("👾 👾 👾", searchedName, GotUrl);
+    res.redirect("/results");
   } catch (err) {
     console.log("🍎 🍎 🍎", err);
   }

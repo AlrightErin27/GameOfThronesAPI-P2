@@ -9,8 +9,9 @@ router.post("/", async (req, res) => {
   try {
     const GotUrl = `https://www.anapioficeandfire.com/api/characters?name=${searchedName}`;
     const response = await axios.get(GotUrl);
-    console.log("👾 👾 👾", searchedName, GotUrl);
-    res.redirect("/results");
+    const characters = await response.data
+    console.log("👾",  characters[0].name );
+    res.render("results/results.ejs", { characters:characters });
   } catch (err) {
     console.log("🍎 🍎 🍎", err);
   }

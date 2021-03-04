@@ -3,8 +3,21 @@ const { default: axios } = require("axios");
 const { render } = require("ejs");
 const db = require("../models");
 
-// router.post("/", async (req, res) => {});
+// router.get("/", async (req, res) => {
+//     const searchedName = req.body.searched_name;
+//     try{
+//         const GotUrl = `https://www.anapioficeandfire.com/api/characters?name=${searchedName}`;
+//         const response = await axios.get(GotUrl);
+//         const character = response.data
+//     } catch(err){
+//         console.log("🐞 ", err)
+//     }
+// });
 
-//Routes//
+
+
 
 module.exports = router;
+// <% if (searchResults) { %> 
+//     <%= searchResults %>
+//      <% } %>

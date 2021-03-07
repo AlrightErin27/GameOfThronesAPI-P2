@@ -39,7 +39,7 @@ app.post("/", async (req, res) => {
     if (
       req.body.username === "" ||
       req.body.password === ""
-      // || req.body.username === db.user.username
+      
     ) {
       console.log("no go 😢");
       return res.redirect("/");
@@ -48,16 +48,31 @@ app.post("/", async (req, res) => {
     const [user, created] = await db.user.findOrCreate({
       where: { username: req.body.username, password: req.body.password },
     });
+    const currentUser = await db.user.findOne({
+      where: {
+        id: user.id,
+      },
+    });
+    const usersFavs = await db.userfavorite.findAll({
+      where: {
+        userId: user.id
+      }
+    })
+  const favList = usersFavs.map(currentFav => {
+    return  currentFav.dataValues.name
+  })
     if (created) {
       res.cookie("userId", user.id);
       res.render("./userhome/userhome", {
         user: `❇ Welcome ${req.body.username}. You've created a new account.❇ `,
+        favList: []
       });
     } else if (!created) {
       res.cookie("userId", user.id);
       console.log(`🐟 🐟 🐟  Welcome back ${req.body.username}! `);
       res.render("./userhome/userhome", {
         user: `Welcome back ${req.body.username}!`,
+        favList: favList
       });
     }
   } catch (err) {

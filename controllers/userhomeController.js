@@ -13,7 +13,8 @@ router.post("/", async (req, res) => {
         userId: req.cookies.userId,
       },
     });
-    res.redirect(`/userhome`);
+    console.log("Hi Bitch")
+    res.redirect(`/userhome`, { favList : [] });
   } catch (err) {
     console.log("🍎 🍎 🍎", err);
   }

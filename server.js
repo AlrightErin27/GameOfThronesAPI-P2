@@ -77,8 +77,18 @@ app.get("/userhome", async (req, res) => {
       id: userId,
     },
   });
+  const usersFavs = await db.userfavorite.findAll({
+    where: {
+      userId: userId
+    }
+  })
+const favList = usersFavs.map(currentFav => {
+  return  currentFav.dataValues.name
+})
+  console.log("🍀 🍀 🍀", favList)
   res.render("./userhome/userhome", {
     user: `${currentUser.dataValues.username} is logged on.`,
+    favList: favList
   });
 });
 

@@ -10,7 +10,7 @@ const db = require("./models");
 //Variables//
 const app = express();
 const rowdyResults = rowdy.begin(app);
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 //Middleware and config//
 app.set("view engine", "ejs");

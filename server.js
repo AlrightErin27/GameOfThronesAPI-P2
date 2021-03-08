@@ -39,7 +39,6 @@ app.post("/", async (req, res) => {
     if (
       req.body.username === "" ||
       req.body.password === ""
-      
     ) {
       console.log("no go 😢");
       return res.redirect("/");

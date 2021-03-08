@@ -43,7 +43,7 @@ nav a:hover {
 .login-container {
   transform: translate(50px, 570px);
 }
-#push-button {
+.push-button {
   padding: .5em 3em;
   margin: 0 .3em .3em 0;
   border: .16em solid #FFFFFF;
@@ -53,7 +53,7 @@ nav a:hover {
   transition: all .15s;
   font-family: 'Cinzel', serif;
 }
-#push-button:hover {
+.push-button:hover {
   color: #DDDDDD;
   border-color: #DDDDDD;
 }
@@ -80,4 +80,18 @@ nav a:hover {
   height: auto;
   font-size: 20px;
   background-color: rgb(102, 16, 16);
+}
+/* Search page/search.ejs Specific Styling */
+#searchpg-header{
+  text-align: center;
+  font-size: 40px;
+}
+#search-form {
+  font-size: 20px;
+}
+#poster{
+  text-align: center;
+}
+#results-display {
+  font-size: 30px;
 }

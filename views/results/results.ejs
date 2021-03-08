@@ -1,21 +1,17 @@
 <h1>Results</h1>
 
+<div id="results-display">
     <% characters.forEach(character=> { %>
         <div>
                 <a href="https://www.anapioficeandfire.com/api/characters?name=<%= character.name %>"><%= character.name %></a>
 
-
-
-
-
                 <form method="POST" action="/userhome">
                     <input type="hidden" name="name" value="<%= character.name %>" id="usersFavs">
-                    <input type="submit" value="Add to favorites" id="usersFavs" >
+                    <input type="submit" value="Save Search" id="usersFavs" class="push-button" >
                 </form>
-
 
         </div>
     <% }) %>
-
+</div>
 
     <h3>If no link(s) show above double check spelling & that it's the full name.</h3>

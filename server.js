@@ -84,7 +84,7 @@ app.post("/", async (req, res) => {
 app.get("/userhome", async (req, res) => {
   const userId = req.cookies.userId;
   if (!userId) {
-    console.log("no go 😢");
+    console.log("no go 😢. No cookies!🍪 ");
     return res.redirect("/");
   }
   const currentUser = await db.user.findOne({

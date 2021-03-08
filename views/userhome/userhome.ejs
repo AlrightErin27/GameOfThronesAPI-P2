@@ -1,8 +1,18 @@
-<h1>You are logged in!</h1>
-<%= user %> <br />
+<h1 id="login-header"><img src="../images/sheild.png"> &emsp;A Lannister always pays their debts &emsp;<img src="../images/sheild.png"></h1>
 
-<% favList.forEach(usersFavs => { %>
-    <div>
-            <%= usersFavs %>
-    </div>
-<% }) %>
+<div id="user-welcome">
+    <%= user %> 
+</div>
+
+<div id="favorites">
+    <h2>User's Saved Searches</h2>
+    <% favList.forEach(usersFavs => { %>
+        <div>
+                <%= usersFavs %>
+        </div>
+    <% }) %>
+</div>
+
+<div id="cersei">
+    <img src="../images/Cersei.png">
+</div>
